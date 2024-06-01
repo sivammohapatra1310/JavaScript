@@ -45,3 +45,28 @@ const myFunction=function(){
 //typeof function=function
 
 // ** typeof always returns a String
+
+/**************************************/
+
+/*
+Stack - Primitive --> reference is used 
+Heap - Non-Primitive --> changes are made to original value
+
+*/
+let original=1234
+let duplicate=original
+duplicate=2345
+//changes made to duplicate not reflected to original
+console.log(original);
+console.log(duplicate);
+
+
+original={
+    name:"Sivam",
+    age:20
+}
+duplicate=original
+duplicate.name="Ishan"
+//changes made to duplicate reflected to original
+console.log(original);
+console.log(duplicate);
