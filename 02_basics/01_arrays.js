@@ -12,7 +12,6 @@ have prototype access
 arr.push(6); //like c++
 console.log(arr);
 arr.pop();
-
 arr.unshift(9);//it is very complex
 console.log(arr);
 //adds to begin
