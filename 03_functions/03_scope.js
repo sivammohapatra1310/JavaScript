@@ -9,6 +9,10 @@ if (true) {
     
 }
 
+/*  
+    global scope is different for node and browser
+*/
+
 
 
 // console.log(a);
@@ -54,7 +58,11 @@ function addone(num){
 
 
 
-addTwo(5)
+// addTwo(5) 
+
+/* 
+expressions can't be accessed before the decalaration
+*/
 const addTwo = function(num){
     return num + 2
 }

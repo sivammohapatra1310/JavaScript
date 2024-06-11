@@ -38,13 +38,37 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 // console.log(loginUserMessage("hitesh"))
 
+function loginUserMessage(username){
+    if(username===undefined){
+        console.log("PLease enter a username");
+        return
+    }
+    return `${username} just logged in`
+}
 
+//shopping cart 
+
+/*
+... rest operator and spread operator
+
+*/
 function calculateCartPrice(val1, val2, ...num1){
     return num1
 }
 
 // console.log(calculateCartPrice(200, 400, 500, 2000))
 
+
+function multiply(multiplier, ...theArgs) {
+    return theArgs.map((element) => multiplier * element);
+  }
+  
+  const arr = multiply(2, 15, 25, 42);
+  console.log(arr); // [30, 50, 84]
+
+/*
+  map function returns a new array
+ */
 const user = {
     username: "hitesh",
     prices: 199
