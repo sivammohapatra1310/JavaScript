@@ -1,92 +1,131 @@
-html {
-    font-family: sans-serif;
+/* Reset some default browser styles */
+body, h1, p, form, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and background styles */
+body {
+  background-color: #1c1c1c;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border:2px solid red;
+}
+/* Navigation styles */
+nav {
+  width: 100%;
+  background-color: #ff6f61;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Wrapper and content alignment */
+#wrapper {
+  max-width: 600px;
+  width: 90%;
+  padding: 2rem;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Form styles */
+form {
+  margin-top: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="submit"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  width: calc(100% - 1rem);
+  margin-bottom: 1rem;
+  background-color: #555;
+  color: #fff;
+}
+
+input[type="submit"] {
+  background-color: #ff6f61;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #e55d4f;
+}
+
+/* Result paragraphs */
+.resultParas {
+  margin-top: 1rem;
+  color: #f1c40f;
+}
+
+.resultParas p {
+  margin: 0.5rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  nav {
+      flex-direction: column;
+      align-items: center;
   }
-  
-  body {
-    width: 300px;
-    max-width: 750px;
-    min-width: 480px;
-    margin: 0 auto;
-    background-color: #212121;
+
+  nav a {
+      margin: 0.5rem 0;
   }
-  
-  .lastResult {
-    color: white;
-    padding: 7px;
-  }
-  
-  .guesses {
-    color: white;
-    padding: 7px;
-  }
-  
-  button {
-    background-color: #141414;
-    color: #fff;
-    width: 250px;
-    height: 50px;
-    border-radius: 25px;
-    font-size: 30px;
-    border-style: none;
-    margin-top: 30px;
-    /* margin-left: 50px; */
-  }
-  
-  #subt {
-    background-color: #161616;
-    color: #ffffff;
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 20px;
-    border-style: none;
-    margin-top: 50px;
-    /* margin-left: 75px; */
-  }
-  
-  #guessField {
-    color: #000;
-    width: 250px;
-    height: 50px;
-    font-size: 30px;
-    border-style: none;
-    margin-top: 25px;
-  
-    /* margin-left: 50px; */
-    border: 5px solid #6c6d6d;
-    text-align: center;
-  }
-  
-  #guess {
-    font-size: 55px;
-    /* margin-left: 90px; */
-    margin-top: 120px;
-    color: #fff;
-  }
-  
-  .guesses {
-    background-color: #7a7a7a;
-  }
-  
+
   #wrapper {
-    box-sizing: border-box;
-    text-align: center;
-    width: 450px;
-    height: 550px;
-    background-color: #474747;
-    color: #fff;
-    font-size: 25px;
+      width: 95%;
+      padding: 1rem;
   }
-  
-  h1 {
-    background-color: #161616;
-  
-    color: #fff;
-    text-align: center;
+
+  input[type="text"], input[type="submit"] {
+      width: 100%;
   }
-  
-  p {
-    font-size: 16px;
-    text-align: center;
-  }
-  
+}
