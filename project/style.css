@@ -1,0 +1,125 @@
+/* Reset some default browser styles */
+body, h1, p, form, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background styles */
+body {
+    background-color: #212121;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    width: 100%;
+    background-color: #ff6f61;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Wrapper and content alignment */
+#wrapper {
+    max-width: 600px;
+    width: 90%;
+    padding: 2rem;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Form styles */
+form {
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="submit"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="text"] {
+    width: calc(100% - 1rem);
+    margin-bottom: 1rem;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    width: auto;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e55d4f;
+}
+
+/* Result paragraphs */
+.resultParas {
+    margin-top: 1rem;
+    color: #f1c40f;
+}
+
+.resultParas p {
+    margin: 0.5rem 0;
+}
+
+/* Additional styling for game messages */
+.lowOrHi h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    #wrapper {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    input[type="text"], input[type="submit"] {
+        width: 100%;
+    }
+}
