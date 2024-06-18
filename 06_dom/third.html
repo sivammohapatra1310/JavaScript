@@ -10,17 +10,26 @@
     
 </body>
 <script>
-    const div = document.createElement('div')
-    console.log(div);
-    div.className = "main"
-    div.id = Math.round(Math.random() * 10 + 1)
-    div.setAttribute("title", "generated title")
-    div.style.backgroundColor = "green"
-    div.style.padding = "12px"
-    // div.innerText = "Chai aur code"
-    const addText = document.createTextNode("Chai aur code")
-    div.appendChild(addText)
-
-    document.body.appendChild(div)
+    function creatediv(text) {
+        
+        const div = document.createElement('div')
+        console.log(div);
+        div.className = "main"
+        div.id = Math.round(Math.random() * 10 + 1)
+        div.setAttribute("title", "generated title")
+        div.style.backgroundColor = "pink"
+        div.style.padding = "12px"
+        div.style.color="green"
+        div.style.width = "50%"
+        // div.innerText = "Chai aur code"
+        const addText = document.createTextNode(text)
+        div.appendChild(addText)
+        
+        document.body.appendChild(div)
+    }
+    for (let index = 0; index < 5; index++) {
+        creatediv(index);
+        
+    }
 </script>
 </html>
