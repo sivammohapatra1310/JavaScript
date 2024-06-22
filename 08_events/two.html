@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sivam</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //handler, timeout
+    const change= function () {
+        document.querySelector('h1').
+        innerHTML="ishan";
+    }
+    const chage=setTimeout(change, 2000);
+    //required for clear timeout
+    setTimeout(function(){
+        console.log("2 seconds wait")
+    }, 2000);
+
+    document.querySelector('button').addEventListener
+    ('click', function(){
+        clearTimeout(chage);
+        console.log("stopped");
+    })
+
+</script>
+</html>

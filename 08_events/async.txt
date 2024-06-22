@@ -1,0 +1,31 @@
+javascript
+synchronous
+single threaded
+(but is very fast)
+execution context
+--> 
+execute one line of code at a time
+each execution waits for the last one to complete
+call stack
+memory heap
+
+--> 
+blocking code
+blocks the flow of the program
+read file synchronous
+--> non blocking code
+does not block execution
+read file asynch
+
+
+--> js engine has 2 things menory heap and 
+call stack(which has many fnunctions)
+call stack will call to a web api
+{DOM api, set timeout, Set interval, fetch()}
+
+then there is a register call back
+then there is a task queue
+then that is added to call stack
+
+fetch() gives promises which result in
+a high priority queue
