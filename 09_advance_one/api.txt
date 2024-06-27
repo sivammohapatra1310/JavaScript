@@ -1,0 +1,33 @@
+JavaScript Framework
+Definition: A JavaScript framework provides a structure for building applications, offering a collection of libraries, tools, and best practices to streamline development.
+Example: React and Angular.
+React: Provides components, state management, and lifecycle methods to build user interfaces.
+Angular: A comprehensive framework with tools for building single-page applications, including dependency injection, data binding, and routing.
+
+
+JavaScript Library
+Definition: A JavaScript library is a collection of pre-written code that developers can use to perform common tasks, making development easier and faster.
+Example: jQuery and Lodash.
+jQuery: Simplifies DOM manipulation, event handling, and AJAX requests.
+Lodash: Provides utility functions for common programming tasks, such as working with arrays, objects, and strings.
+
+
+Browser APIs
+Definition: Browser APIs are built into web browsers, allowing developers to interact with the browser and manipulate web pages.
+Example: Document Object Model (DOM) API and Fetch API.
+DOM API: Allows manipulation of HTML and CSS, e.g., document.querySelector() to select elements.
+Fetch API: Enables making network requests, e.g., fetch('https://api.example.com/data') to retrieve data from a server.
+
+
+Third-Party APIs
+Definition: Third-party APIs are external services that provide functionality via an API, which developers can integrate into their applications.
+Example: Google Maps API and Twitter API.
+Google Maps API: Allows embedding maps, adding markers, and performing geolocation.
+Twitter API: Provides access to Twitter data, such as retrieving tweets or posting new ones.
+
+
+Summary of Differences
+JavaScript Framework: Provides a complete structure and set of tools for building applications (e.g., Angular, React).
+JavaScript Library: Offers a collection of functions and methods for specific tasks (e.g., jQuery, Lodash).
+Browser APIs: Built-in browser functionalities for interacting with the web page and network (e.g., DOM API, Fetch API).
+Third-Party APIs: External services providing additional features and data (e.g., Google Maps API, Twitter API).
