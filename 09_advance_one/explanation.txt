@@ -1,0 +1,25 @@
+Why is fetch used inside async function?
+
+fetch is used inside an async function because fetch returns a promise, and using await within an async function allows you to wait for the promise to resolve.
+What is the actual purpose of async/await?
+
+The purpose of async/await is to simplify asynchronous code, making it easier to read and write. It allows you to write asynchronous code in a synchronous manner.
+Can fetch be used outside async/await? If yes, give examples.
+
+Yes, fetch can be used outside async/await by handling the promise with .then() and .catch().
+javascript
+Copy code
+fetch('file.txt')
+  .then(response => response.text())
+  .then(text => {
+    myDisplay(text);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+What is the use of await?
+
+await is used to pause the execution of an async function until the promise is resolved, making it easier to work with asynchronous operations.
+Can an async function not contain await?
+
+Yes, an async function can be declared without containing await, but doing so negates the benefits of using async in the first place.
